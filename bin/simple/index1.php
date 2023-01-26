@@ -1,3 +1,4 @@
+<?php //include 'processor/process_cart.php'; ?>
 <?php
 session_start();
 require_once("dbcontroller.php");

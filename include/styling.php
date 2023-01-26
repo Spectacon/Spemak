@@ -1,8 +1,7 @@
-<?php session_start(); ?>
-<head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Spemak - Spemak Gift Card Shop</title>
+   
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -22,5 +21,4 @@
     <link rel="stylesheet" href="style.css">
     <!-- Modernizer JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
 

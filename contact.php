@@ -64,7 +64,7 @@
                                 <ul>
                                     <li><span>Address:</span>97 Riverview Street Hempstead, NY 11550</li>
                                     <li><span>Email:</span>Spemakgiftstore@email.com</li>
-                                    <li><span>Phone:</span>+99 854 785 65</li>
+                                    <li><span>Phone:</span>+1(332)282-9813</li>
                                 </ul>
                                 <div class="contact-social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>

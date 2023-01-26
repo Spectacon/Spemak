@@ -58,7 +58,7 @@
                                                             <p>1 x £9.00</p>
                                                             <a href="#" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
                                                         </div>
-                                                    </div>
+                                                    </div> 
                                                     <div class="single-cart clearfix">
                                                         <div class="cart-image">
                                                             <a href="product-details.php"><img src="img/cart/2.jpg" alt=""></a>
@@ -174,11 +174,11 @@
                                         <li data-form="checkout-register-form">Register</li>
                                     </ul>
                                     
-                                    <form action="login.php" method="post" class="checkout-login-form">
+                                    <form action="" method="post" class="checkout-login-form">
                                       <?php include('include/errors.php'); ?>    
                                     <div class="row">
-                                            <div class="input-box col-md-6 col-12 mb-20"><input type="email" placeholder="Email Address"></div>
-                                            <div class="input-box col-md-6 col-12 mb-20"><input type="password" placeholder="Password"></div>
+                                            <div class="input-box col-md-6 col-12 mb-20"><input type="text" placeholder="Username/Email Address" name="username"></div>
+                                            <div class="input-box col-md-6 col-12 mb-20"><input type="password" placeholder="Password" name="password"></div>
                                             <div class="input-box col-md-6 col-12 mb-20"><input type="submit" value="Login"></div>
                                         </div>
                                     </form>

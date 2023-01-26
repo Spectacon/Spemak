@@ -69,7 +69,6 @@
                                     <th class="qty">Update Qty</th>
                                     <th class="price">price</th>
                                     <th class="total">total</th>
-                                    
                                     <th class="remove">remove</th>
                                 </tr>
                             </thead>
@@ -92,10 +91,7 @@
                                         <input type="text" value="<?= $cart['qty']; ?>" name="qty" min="1">
                                        
                                     </div></td>
-                                    <td class=""><input type="hidden" name="upid" value="<?= $cart['id']; ?>">
-                            <input type="submit" name="update" class="button" color="purple" value="Update" >
-                            </td>
-                            </form>
+                                    <td>update</td>
                                     <td><p class="cart-pro-price">$<?php echo $cart["item_price"]; ?></p></td>
                                     <?php
                                     $total1 = $cart["qty"] * $cart["item_price"];
@@ -108,7 +104,6 @@
                                     <i  class="fa fa-trash-o"  >
                                 </i></a></td>
                                 </tr>
-                                
                                 <?php
                                     $i++;
                                     endforeach;
@@ -129,7 +124,7 @@
                             <input type="hidden" name="upid" value="<?= $cart['id']; ?>">
                             <input type="submit" name="update" class="button" value="Update" >
                             
-                        
+                        </form>
                         </div>
                         
                         <!-- Cart Cuppon -->
@@ -142,7 +137,7 @@
                             </form>
                         </div>
                         <?php
-                        //if (!isset($_SESSION['cart'])){
+                        //if (!isset($_SESSION['cart'])) ;
                             $total=0;
                            // foreach($_SESSION["cart"] as $keys => $cart){
 
@@ -165,8 +160,7 @@
                         
                     </div>
                     <?php
-                         //   }
-					// }
+					 //}
 					?>
                   
 

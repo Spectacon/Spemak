@@ -1,3 +1,8 @@
+<?php //session_start(); ?>
+<?php //include 'dbcontroller.php'; ?>
+<?php include 'dbcontroller.php'; ?>
+<?php include 'header.php'; ?>
+<?php include 'cart/process.php'; ?>
 <body>
 
 <!-- Main Wrapper Start -->
@@ -30,48 +35,62 @@
                                 <div class="header-logo col-md-4 col-12">
                                     <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
                                 </div>
-
+                                
                                 <!-- Account Menu -->
                                 <div class="account-menu col-md-4 col-12">
+
+                                <div class="d-flex">
+                                    <a class="btn btn-outline-success" href="cart/cart.php">Cart 
+                                    <?php if (isset($_SESSION['cart'])) :
+                                    //echo count($_SESSION['cart']); 
+                                    ?>
+                                    <?php echo count($_SESSION['cart']); ?>
+                                     <?php endif; ?>
+                                           </a>
+                                </div>
                                     <ul>
                                         <li><a href="#">My Account</a></li>
                                         <li><a href="wishlist.php">Wishlist</a></li>
-                                        <li><a href="#" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
+                                        <li><a href="#" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i><span class="num"><?php echo count($_SESSION['cart']);; ?></span></a>
                                             
                                             <!-- Mini Cart -->
                                             <div class="mini-cart-brief dropdown-menu text-left">
                                                 <!-- Cart Products -->
+                                                <?php
+                                                
+                                                if (isset($_SESSION['cart'])) :
+                                                    $i = 1;
+                                                    foreach ($_SESSION['cart'] as $cart):
+                                                ?> 
                                                 <div class="all-cart-product clearfix">
                                                     <div class="single-cart clearfix">
                                                         <div class="cart-image">
                                                             <a href="product-details.php"><img src="img/cart/1.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-info">
-                                                            <h5><a href="product-details.php">Holiday Candle</a></h5>
-                                                            <p>1 x £9.00</p>
-                                                            <a href="#" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
+                                                            <h5><a href="product-details.php"><?= $cart['pro_id']; ?></a></h5>
+                                                            <p><?= $cart['qty']; ?> x $<?=  $cart['item_price']; ?></p>
+                                                            <a href="cart/removecartitem.php?id=<?= $cart['pro_id']; ?>" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
                                                         </div>
                                                     </div>
-                                                    <div class="single-cart clearfix">
-                                                        <div class="cart-image">
-                                                            <a href="product-details.php"><img src="img/cart/2.jpg" alt=""></a>
-                                                        </div>
-                                                        <div class="cart-info">
-                                                            <h5><a href="product-details.php">Christmas Tree</a></h5>
-                                                            <p>1 x £9.00</p>
-                                                            <a href="#" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
+                                                <?php
+                                                $i++;
+                                                endforeach;
+                                            endif;
+                                            ?>
                                                 <!-- Cart Total -->
                                                 <div class="cart-totals">
-                                                    <h5>Total <span>£12.00</span></h5>
+                                                    <h5>Total <span>$12.00</span></h5>
+                                                   
                                                 </div>
                                                 <!-- Cart Button -->
                                                 <div class="cart-bottom  clearfix">
                                                     <a href="checkout.php">Check out</a>
                                                 </div>
                                             </div>
+                                            
                                             
                                         </li>
                                     </ul>
@@ -120,4 +139,6 @@
                                
                                 <li><a href="contact.php">contact</a></li>
                             </ul>
+                            
+                            
                         </nav>

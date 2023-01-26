@@ -1,16 +1,125 @@
-<?php include 'shopping/process.php'; ?>
+<!doctype html>
+<html class="no-js" lang="en">
 <?php include 'include/price.php'; ?>
+    <?php include 'include/head.php'; ?>
+    <?php include 'include/head2.php'; ?>
+    <?php include 'processor/process_cart.php'; ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                        <!-- Header Search -->
+                        <div class="header-search">
+                            
+                            <!-- Search Toggle -->
+                            <button class="search-toggle"><i class="ion-ios-search-strong"></i></button>
+                            
+                            <!-- Search Form -->
+                            <div class="header-search-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button><i class="ion-ios-search-strong"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu section d-md-none"></div>
 
-<div class="row">
-
+                    </div><!-- Header Bottom Wrapper End -->
+                    
+                </div>
+            </div>
+        </div><!-- Header Bottom End -->
+        
+    </div><!-- Header Section End -->
     
+    <!-- Hero Slider Start-->
+    <div class="hero-slider section fix">
+
+        <!-- Hero Slide Item Start-->
+        <div class="hero-item" style="background-image: url(img/hero/1.jpg)">
+
+            <!-- Hero Content Start-->
+            <div class="hero-content text-center m-auto">
+
+                <h2>Save 25%</h2>
+                <h1>New Year Sale</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+                <a href="#">LEARN MORE</a>
+
+            </div><!-- Hero Content End-->
+
+        </div><!-- Hero Slide Item End-->
+
+        <!-- Hero Slide Item Start-->
+        <div class="hero-item" style="background-image: url(img/hero/2.jpg)">
+
+            <!-- Hero Content Start-->
+            <div class="hero-content text-center m-auto">
+
+                <h2>Save 25%</h2>
+                <h1>New Year Sale</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+                <a href="#">LEARN MORE</a>
+
+            </div><!-- Hero Content End-->
+
+        </div><!-- Hero Slide Item End-->
+
+    </div><!-- Hero Slider End-->
+    
+    <!-- Banner Section Start-->
+    <div class="banner-section section pt-120">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-6 col-12 mb-30">
+                    
+                    <div class="single-banner">
+                        <img src="img/banner/1.jpg" alt="banner">
+                        <div class="banner-content right">
+                            <h1 class="white"><span>Gifts</span>New Year</h1>
+                            <a href="#" class="button">Shop Now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-lg-6 col-12 mb-30">
+                    
+                    <div class="single-banner">
+                        <img src="img/banner/2.jpg" alt="banner">
+                        <div class="banner-content left">
+                            <h2 class="black"><span class="small">Save <span class="red">25%</span></span><span class="red">Offer</span> New year</h2>
+                            <a href="#" class="link">Shop Now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div><!-- Banner Section End-->
+    
+       
+    <!-- Product Section Start-->
+    <div class="product-section section pt-70 pb-60">
+        <div class="container">
+           
+            <!-- Section Title Start-->
+            <div class="row">
+                <div class="section-title text-center col mb-60">
+                    <h1>Featured Products</h1>
+                </div>
+            </div><!-- Section Title End-->
+            
+            <!-- Product Wrapper Start-->
+            <div class="row">
+                
                 <!-- Product Start-->
                 <div class="col-lg-4 col-md-6 col-12 mb-60">
+                   
                     <div class="product">
+
                         <!-- Image Wrapper -->
                         <div class="image">
                             <!-- Image -->
@@ -20,26 +129,36 @@
                             <!-- Label -->
                             <span class="label">New</span>
                         </div>
+                        
                         <!-- Content -->
                         <div class="content">
+                            
                             <!-- Head Content -->
                             <div class="head fix">
                                
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Amazon AED Card</a></h5>
+                                    <a href="shop.html" class="category">Catalog</a>
                                 </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$</span>
+                                    <span class="new">$<?php echo $row['price']; ?></span>
+                                    <!-- Old Price Mockup If Need -->
+                                    <!-- <span class="old">$46</span> -->
                                 </div>
+                                
                             </div>
+                            
                             <!-- Action Button -->
                             <div class="action-button fix">
                                 <a href="#">add to cart</a>
-                            </div>   
+                            </div>
+                            
                         </div>
+
                     </div>
+                    
                 </div><!-- Product End-->
                 
                 <!-- Product Start-->
@@ -66,11 +185,11 @@
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Spemak Voucher</a></h5>
-                                    
+                                    <a href="shop.html" class="category">Catalog</a>
                                 </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$38</span>
+                                    <span class="new">$<?php echo $row['price']; ?></span>
                                     <!-- Old Price Mockup If Need -->
                                     <!-- <span class="old">$46</span> -->
                                 </div>
@@ -112,11 +231,11 @@
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Astropay Card</a></h5>
-                            
+                                    <a href="shop.html" class="category">Catalog</a>
                                 </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$38</span>
+                                    <span class="new">$18</span>
                                     <!-- Old Price Mockup If Need -->
                                     <!-- <span class="old">$46</span> -->
                                 </div>
@@ -158,10 +277,11 @@
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Apple Gift Card</a></h5>
-                                      </div>
+                                    <a href="shop.html" class="category">Catalog</a>
+                                </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$38</span>
+                                    <span class="new">$18</span>
                                     <!-- Old Price Mockup If Need -->
                                     <!-- <span class="old">$46</span> -->
                                 </div>
@@ -203,11 +323,11 @@
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Google Play Card</a></h5>
-                                    
+                                    <a href="shop.html" class="category">Catalog</a>
                                 </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$38</span>
+                                    <span class="new">$20</span>
                                     <!-- Old Price Mockup If Need -->
                                     <!-- <span class="old">$46</span> -->
                                 </div>
@@ -249,11 +369,11 @@
                                 <!-- Title & Category -->
                                 <div class="title-category float-left">
                                     <h5 class="title"><a href="product-details.html">Spotify Gift Card</a></h5>
-                                
+                                    <a href="shop.html" class="category">Catalog</a>
                                 </div>
                                 <!-- Price -->
                                 <div class="price float-right">
-                                    <span class="new">$38</span>
+                                    <span class="new">$20</span>
                                     <!-- Old Price Mockup If Need -->
                                     <!-- <span class="old">$46</span> -->
                                 </div>
@@ -272,78 +392,84 @@
                 </div><!-- Product End-->
                 
             </div>
-
+            <!-- Product Wrapper End-->
             
-            <?php
-				$query = "SELECT * FROM tbl_product ORDER BY id ASC";
-				$result = mysqli_query($connect, $query);
-				if(mysqli_num_rows($result) > 0)
-				{
-					while($row = mysqli_fetch_array($result))
-					{
-				?>
-            <div class="col-md-4">
-				<form method="post" action="shop.php?action=add&id=<?php echo $row["id"]; ?>">
-					<div style="border:3px solid #5cb85c; background-color:whitesmoke; border-radius:5px; padding:16px;" align="center">
-						<img src="images/<?php echo $row["image"]; ?>" class="img-responsive" /><br />
+        </div>
+    </div><!-- Product Section End-->
+    
+       
+    <!-- Testimonial Section Start-->
+    <div class="testimonial-section section bg-gray pt-100 pb-65" style="background-image: url(img/bg/testimonial.png)">
+        <div class="container">
+           
+            <!-- Section Title Start-->
+            <div class="row">
+                <div class="section-title text-center col mb-60">
+                    <h1>Customer Reviews</h1>
+                </div>
+            </div><!-- Section Title End-->
+            
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-12 ml-auto mr-auto">
+                    
+                    <!-- Testimonial Slider Start -->
+                    <div class="testimonial-slider text-center">
+                        
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial">
+                            <img src="img/testimonial/1.jpg" alt="customer">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                            <h5>Betty Moore</h5>
+                        </div>
+                        
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial">
+                            <img src="img/testimonial/1.jpg" alt="customer">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                            <h5>Betty Moore</h5>
+                        </div>
+                        
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial">
+                            <img src="img/testimonial/1.jpg" alt="customer">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                            <h5>Betty Moore</h5>
+                        </div>
+                        
+                    </div><!-- Testimonial Slider End -->
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div><!-- Testimonial Section End-->
+    
 
-						<h4 class="text-info"><?php echo $row["name"]; ?></h4>
+    
 
-						<h4 class="text-danger">$ <?php echo $row["price"]; ?></h4>
+    <?php include 'include/footer.php'; ?>
 
-						<input type="text" name="quantity" value="1" class="form-control" />
+    
 
-						<input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
+</div><!-- Main Wrapper End -->
 
-						<input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
+<!-- JS
+============================================ -->
 
-						<input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+<!-- jQuery JS -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="js/plugins.js"></script>
+<!-- Ajax Mail JS -->
+<script src="js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="js/main.js"></script>
+</body>
 
-					</div>
-				</form>
-			</div>
-			<?php
-					}
-				}
-			?>
-			<div style="clear:both"></div>
-			<br />
-	<h3>Order Details</h3>
-			<div class="table-responsive">
-				<table class="table table-bordered">
-					<tr>
-						<th width="40%">Item Name</th>
-						<th width="10%">Quantity</th>
-						<th width="20%">Price</th>
-						<th width="15%">Total</th>
-						<th width="5%">Action</th>
-					</tr>
-					<?php
-					if(!empty($_SESSION["shopping_cart"]))
-					{
-						$total = 0;
-						foreach($_SESSION["shopping_cart"] as $keys => $values)
-						{
-					?>
-					<tr>
-						<td><?php echo $values["item_name"]; ?></td>
-						<td><?php echo $values["item_quantity"]; ?></td> 
-						<td>$ <?php echo $values["item_price"]; ?></td>
-						<td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
-						<td><a href="shop.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
-					</tr>
-					<?php
-							$total = $total + ($values["item_quantity"] * $values["item_price"]);
-						}
-					?>
-					<tr>
-						<td colspan="3" align="right">Total</td>
-						<td align="right">$ <?php echo number_format($total, 2); ?></td>
-						<td></td>
-					</tr>
-					<?php
-					}
-					?>
-						
-				</table>
-			</div>
+</html>
+ 
+
