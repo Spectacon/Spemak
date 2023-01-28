@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-
 <?php include 'include/head.php'; ?>
     <?php include 'include/head2.php'; ?>
     

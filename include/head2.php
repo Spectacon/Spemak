@@ -39,7 +39,7 @@
                                 <!-- Account Menu -->
                                 <div class="account-menu col-md-4 col-12">
 
-                                <div class="d-flex">
+                               <div class="d-flex">
                                     <a class="btn btn-outline-success" href="cart/cart.php">Cart 
                                     <?php if (isset($_SESSION['cart'])) :
                                     //echo count($_SESSION['cart']); 
@@ -61,6 +61,7 @@
                                                 if (isset($_SESSION['cart'])) :
                                                     $i = 1;
                                                     foreach ($_SESSION['cart'] as $cart):
+                                                //        $cart_price = $cart["quantity"]*$cart["price"];
                                                 ?> 
                                                 <div class="all-cart-product clearfix">
                                                     <div class="single-cart clearfix">
@@ -73,7 +74,10 @@
                                                             <a href="cart/removecartitem.php?id=<?= $cart['pro_id']; ?>" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
                                                         </div>
                                                     </div>
+                                                    <?php
                                                     
+                                                        $total_price += ($cart["item_price"]*$cart["qty"]);
+                                                        ?>
                                                 </div>
                                                 <?php
                                                 $i++;
@@ -82,7 +86,7 @@
                                             ?>
                                                 <!-- Cart Total -->
                                                 <div class="cart-totals">
-                                                    <h5>Total <span>$12.00</span></h5>
+                                                    <h5>Total <span><?php echo "$ ".number_format($total_price, 2); ?></span></h5>
                                                    
                                                 </div>
                                                 <!-- Cart Button -->
@@ -142,3 +146,29 @@
                             
                             
                         </nav>
+<!-- Header Search -->
+<div class="header-search">
+                            
+                            <!-- Search Toggle -->
+                            <button class="search-toggle"><i class="ion-ios-search-strong"></i></button>
+                            
+                            <!-- Search Form -->
+                            <div class="header-search-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button><i class="ion-ios-search-strong"></i></button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu section d-md-none"></div>
+
+                    </div><!-- Header Bottom Wrapper End -->
+                    
+                </div>
+            </div>
+        </div><!-- Header Bottom End -->
+
+        </div><!-- Header Section End -->

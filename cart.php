@@ -81,6 +81,7 @@
         $i = 1;
         $total = 0;
         foreach ($_SESSION['cart'] as $cart) :
+            $cart_price = $cart["quantity"]*$cart["price"];
       ?>
                                 <tr>
                                     <td><span class="cart-number"><?php echo $i; ?> </span></td>
@@ -101,7 +102,8 @@
                                     $total1 = $cart["qty"] * $cart["item_price"];
                                     $total2 = number_format($total1, 2);
                                     //$total3 = echo number_format($cart["qty"] * $cart["item_price"], 2);
-
+                                    //$total_quantity += $item["quantity"];
+			                    	//$total_price += ($cart["item_price"]*$cart["qty"]);
                                     ?>
                                     <td><p class="cart-price-total">$ <?php echo $total2 ?> </p></td>
                                     <td><a class="cart-pro-remove" href="cart/removecartitem.php?id=<?= $cart['id']; ?>" >
@@ -153,14 +155,10 @@
                         <!-- Cart Checkout Progress -->
                         <div class="cart-checkout-process col-lg-4 col-md-6 col-12 mb-30">
                             <h4 class="title">Process Checkout</h4>
-                            <?php
-							    $gtotal = $gtotal + ($cart["qty"] * $cart["item_price"]);
-							    //$gtotal = $total + ($values["qty"] * $values["item_price"]);
                             
-                            ?>
-                            <p><span>Subtotal</span><span>$190.98</span></p>
-                            <h5><span>Grand total</span><span>$<?php echo number_format($gtotal, 2); ?></span></h5>
-                            <button class="button">process to checkout</button>
+                            <p><span>Subtotal</span><span><?php echo "$ ".number_format($total_price, 2); ?></span></p>
+                            <h5><span>Grand total</span><span><?php echo "$ ".number_format($total_price, 2); ?></span></h5>
+                            <a href="checkout.php" class="button">process to checkout</a>
                         </div>
                         
                     </div>
