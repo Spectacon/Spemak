@@ -9,7 +9,7 @@
 <div class="container">
   <h1 class="my-4">Gift Card Selector</h1>
   <div class="row">
-	
+	 
   <?php
 				$query = "SELECT * FROM tbl_product ORDER BY id ASC";
 				$result = mysqli_query($con, $query);
