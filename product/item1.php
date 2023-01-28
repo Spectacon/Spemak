@@ -1,6 +1,6 @@
 <?php  include 'db/db.php'; ?>
 <?php //include 'cart/process.php'; ?>
-<?php //include 'cart/process2.php'; ?>
+<?php include 'cart/process2.php'; ?>
 <?php //include 'cart/processing2.php'; ?>
 <?php //include 'cart/header.php'; ?>
 <?php //include 'include/head.php'; ?>
