@@ -36,17 +36,18 @@
                                     <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
                                 </div>
                                 
-                                <!-- Account Menu -->
+                                
                                 <div class="account-menu col-md-4 col-12">
 
                                <div class="d-flex">
-                                    <a class="btn btn-outline-success" href="cart/cart.php">Cart 
-                                    <?php if (isset($_SESSION['cart'])) :
+                                    
+                                    <!-- Account Menu <a class="btn btn-outline-success" href="cart/cart.php"> Cart </a>-->
+                                    <?php //if (isset($_SESSION['cart'])) :
                                     //echo count($_SESSION['cart']); 
                                     ?>
-                                    <?php echo count($_SESSION['cart']); ?>
-                                     <?php endif; ?>
-                                           </a>
+                                    <?php //echo count($_SESSION['cart']); ?>
+                                     <?php //endif; ?>
+                                           
                                 </div>
                                     <ul>
                                         <li><a href="#">My Account</a></li>

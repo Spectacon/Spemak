@@ -20,8 +20,7 @@
             <div class="hero-content text-center m-auto">
 
                 <h2>Save 25%</h2>
-                <h1>New Year Sale</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
+                
                 <a href="#">LEARN MORE</a>
 
             </div><!-- Hero Content End-->
@@ -36,9 +35,8 @@
             <div class="hero-content text-center m-auto">
 
                 <h2>Save 25%</h2>
-                <h1>New Year Sale</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which.</p>
-                <a href="#">LEARN MORE</a>
+               
+               <a href="#">LEARN MORE</a>
 
             </div><!-- Hero Content End-->
 
@@ -58,7 +56,7 @@
                     <div class="single-banner">
                         <img src="img/banner/1.jpg" alt="banner">
                         <div class="banner-content right">
-                            <h1 class="white"><span>Gifts</span>New Year</h1>
+                           
                             <a href="#" class="button">Shop Now</a>
                         </div>
                     </div>
@@ -70,7 +68,7 @@
                     <div class="single-banner">
                         <img src="img/banner/2.jpg" alt="banner">
                         <div class="banner-content left">
-                            <h2 class="black"><span class="small">Save <span class="red">25%</span></span><span class="red">Offer</span> New year</h2>
+                            <h2 class="gold"><span class="small">Save <span class="red">25%</span></span></h2>
                             <a href="#" class="link">Shop Now</a>
                         </div>
                     </div>
