@@ -4,32 +4,7 @@
 <?php include 'include/head.php'; ?>
     <?php include 'include/head2.php'; ?>
     
-                        <!-- Header Search -->
-                        <div class="header-search">
-                            
-                            <!-- Search Toggle -->
-                            <button class="search-toggle"><i class="ion-ios-search-strong"></i></button>
-                            
-                            <!-- Search Form -->
-                            <div class="header-search-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Search...">
-                                    <button><i class="ion-ios-search-strong"></i></button>
-                                </form>
-                            </div>
-                            
-                        </div>
-                        
-                        <!-- Mobile Menu -->
-                        <div class="mobile-menu section d-md-none"></div>
-
-                    </div><!-- Header Bottom Wrapper End -->
-                    
-                </div>
-            </div>
-        </div><!-- Header Bottom End -->
-        
-    </div><!-- Header Section End -->
+ 
     
        
     <!-- Page Banner Section Start-->
