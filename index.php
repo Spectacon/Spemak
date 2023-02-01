@@ -36,7 +36,7 @@
 
                 <h2>Save 25%</h2>
                
-               <a href="#">LEARN MORE Jonathan jonni</a>
+               <a href="#">LEARN MORE </a>
 
             </div><!-- Hero Content End-->
 
