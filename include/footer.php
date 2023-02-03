@@ -54,7 +54,8 @@
                                 <h4 class="widget-title">Contact Us</h4>
 
                                 <ul>
-                                    <li><span>Address:</span> 97 Riverview Street Hempstead, NY 11550</li>
+                                    <li><span>Address:</span> Abu Dhabi
+United Arab Emirates, 1 Ebenezer Cresent </li>
                                     <li><span>Phone:</span> +1 859 658 589 . +234</li>
                                    
                                     <li><span>Email:</span> Spemakgiftstore@email.com</li>
